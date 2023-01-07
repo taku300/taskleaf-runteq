@@ -22,6 +22,15 @@ module RunteqNormal
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
 
+ #ここからです
+    config.generators do |g|
+      g.assets false    # <= css,javascriptファイルを作成しない
+      g.helper false    # <= helperファイルを作成しない
+      g.test_framework false  # <= テストファイルを作成しない
+      g.skip_routes true  # <= routes.rbを変更しない
+    end
+  # ここまでです
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
