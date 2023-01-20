@@ -12,10 +12,10 @@
       <ul class="navbar-nav ml-auto main-nav align-items-center">
         <% if logged_in? %>
         <li class="nav-item dropdown dropdown-slide">
-          <%= link_to (t "activerecord.models.board"), "#", class: "nav-link dropdown-toggle", data: { toggle: "dropdown" }, aria: { haspopup: "true", expanded: "false" } %>
+          <%= link_to Board.model_name.human, "#", class: "nav-link dropdown-toggle", data: { toggle: "dropdown" }, aria: { haspopup: "true", expanded: "false" } %>
 
           <div class="dropdown-menu dropdown-menu-right">
-            <%= link_to (t 'boards.index.title'), '#', class: 'dropdown-item' %>
+            <%= link_to (t 'boards.index.title'), boards_path, class: 'dropdown-item' %>
             <%= link_to (t 'boards.new.title'), '#', class: 'dropdown-item' %>
           </div>
         </li>

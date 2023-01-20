@@ -42,5 +42,15 @@ module RunteqNormal
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    #TimeZone
+    config.time_zone = 'Tokyo'
+    config.active_record.default_timezone = :local
+
+    #バグ
+    Rails.application.configure do
+      config.log_level = :debug
+      config.logger = ActiveSupport::Logger.new(STDOUT)
+    end
   end
 end
