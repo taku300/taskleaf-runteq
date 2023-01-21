@@ -1,4 +1,5 @@
 <%= form_with model: @board, scope: :board, local: true, class: 'new_board' do |f| %>
+  <%= render 'shared/errors', { object: f.object } %>
   <div class="form-group">
     <%= f.label :title %>
     <%= f.text_field :title, class: 'form-control' %>
