@@ -5,6 +5,8 @@ ja:
     logout: 'ログアウト'
     message:
       require_login: 'ログインしてください'
+      created: "%{item}を作成しました"
+      not_created: "%{item}を作成できませんでした"
   users:
     new:
       title: 'ユーザー登録'
@@ -23,7 +25,6 @@ ja:
     destroy:
       success: 'ログアウトしました'
   boards:
-    login: 'ログインしてください'
     index:
       title: '掲示板一覧'
       no_result: '掲示板がありません'
