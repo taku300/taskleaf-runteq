@@ -37,6 +37,7 @@ gem 'sorcery', '0.14.0'
 gem 'rails-i18n'
 gem 'draper'
 gem 'font-awesome-sass', '5.15.1'
+gem 'carrierwave'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
