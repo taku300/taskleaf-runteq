@@ -39,6 +39,7 @@ gem 'draper'
 gem 'font-awesome-sass', '5.15.1'
 gem 'carrierwave'
 gem 'kaminari'
+gem 'ransack'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
