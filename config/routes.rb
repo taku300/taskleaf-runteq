@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount LetterOpenerWeb::Engine, at: "/letter_opener" if Rails.env.development?
   root 'static_pages#top'
   resources :users, only: %i[new create update]
   resources :boards do
@@ -15,4 +16,5 @@ Rails.application.routes.draw do
     end
   end
   resource :profile, only: %i[show edit update]
+  resources :password_resets, only: [:new, :create, :edit, :update]
 end
