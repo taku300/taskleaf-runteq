@@ -15,4 +15,6 @@
 //= require bootstrap-sprockets
 //= require rails-ujs
 //= require activestorage
-//= require_tree .
+//= require cable.js
+//= require common.js
+//= require edit_comment.js
