@@ -130,6 +130,8 @@ GEM
       dry-core (~> 0.5, >= 0.5)
       dry-initializer (~> 3.0)
       dry-schema (~> 1.8, >= 1.8.0)
+    enum_help (0.0.19)
+      activesupport (>= 3.0.0)
     erubi (1.8.0)
     execjs (2.7.0)
     factory_bot (5.0.2)
@@ -143,10 +145,10 @@ GEM
       faraday-net_http (>= 2.0, < 3.1)
       ruby2_keywords (>= 0.0.4)
     faraday-net_http (3.0.2)
-    ffi (1.15.3)
-    ffi (1.15.3-java)
-    ffi (1.15.3-x64-mingw32)
-    ffi (1.15.3-x86-mingw32)
+    ffi (1.15.5)
+    ffi (1.15.5-java)
+    ffi (1.15.5-x64-mingw32)
+    ffi (1.15.5-x86-mingw32)
     font-awesome-sass (5.15.1)
       sassc (>= 1.11)
     globalid (0.4.2)
@@ -424,6 +426,7 @@ DEPENDENCIES
   carrierwave
   config
   draper
+  enum_help
   factory_bot_rails
   faker
   font-awesome-sass (= 5.15.1)
